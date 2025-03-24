@@ -1,7 +1,7 @@
 import requests 
 import json
 
-API_URL = "https://router.huggingface.co/hf-inference/models/facebook/blenderbot-400M-distill"
+API_URL = "API URL HERE"
 HEADERS = {
         "Authorization": "Bearer 'API_Key_here'", 
         "Content-Type": "application/json"
@@ -12,7 +12,7 @@ def chat_with_huggingface(prompt):
     
     try:
         response = requests.post(API_URL, headers=HEADERS, data=payload)
-        response.raise_for_status()  # Raise an error for HTTP issues (4xx, 5xx)
+        response.raise_for_status()  
         data = response.json()
 
         # Check if response contains generated text
