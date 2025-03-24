@@ -3,7 +3,7 @@ import json
 
 API_URL = "https://router.huggingface.co/hf-inference/models/facebook/blenderbot-400M-distill"
 HEADERS = {
-        "Authorization": "Bearer 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", 
+        "Authorization": "Bearer 'API_Key_here'", 
         "Content-Type": "application/json"
 }
 
